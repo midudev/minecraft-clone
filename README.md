@@ -1,4 +1,4 @@
-# minecraft-clone
+# Minecraft Clone
 Clon de [Minecraft](https://minecraft.net/) hecho con
 
 - [React](https://reactjs.org/) 
