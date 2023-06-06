@@ -19,12 +19,18 @@ const groundTexture = new TextureLoader().load(grassImg)
 groundTexture.wrapS = RepeatWrapping
 groundTexture.wrapT = RepeatWrapping
 
-groundTexture.magFilter = NearestFilter
-grassTexture.magFilter = NearestFilter
-dirtTexture.magFilter = NearestFilter
-logTexture.magFilter = NearestFilter
-glassTexture.magFilter = NearestFilter
-woodTexture.magFilter = NearestFilter
+const textures = [
+	grassTexture,
+	dirtTexture,
+	logTexture,
+	glassTexture,
+	woodTexture,
+	groundTexture,
+];
+
+textures.forEach((texture) => {
+	texture.magFilter = NearestFilter;
+});
 
 export {
   groundTexture,
